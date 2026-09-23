@@ -1,0 +1,37 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d1a"/>
+      <stop offset="100%" stop-color="#1a0d2e"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="100%" stop-color="#15151f"/>
+    </linearGradient>
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="512" height="512" rx="96" fill="url(#bg)"/>
+  <rect x="146" y="106" width="220" height="300" rx="18" fill="url(#paper)" stroke="#00f0ff" stroke-width="3" filter="url(#glowCyan)"/>
+  <circle cx="146" cy="150" r="7" fill="#ff2ec4" filter="url(#glowPink)"/>
+  <circle cx="146" cy="190" r="7" fill="#ff2ec4" filter="url(#glowPink)"/>
+  <circle cx="146" cy="230" r="7" fill="#ff2ec4" filter="url(#glowPink)"/>
+  <circle cx="146" cy="270" r="7" fill="#ff2ec4" filter="url(#glowPink)"/>
+  <circle cx="146" cy="310" r="7" fill="#ff2ec4" filter="url(#glowPink)"/>
+  <circle cx="146" cy="350" r="7" fill="#ff2ec4" filter="url(#glowPink)"/>
+  <line x1="186" y1="160" x2="326" y2="160" stroke="#00f0ff" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <line x1="186" y1="196" x2="326" y2="196" stroke="#7ce8ff" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+  <line x1="186" y1="232" x2="300" y2="232" stroke="#7ce8ff" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+  <line x1="186" y1="268" x2="326" y2="268" stroke="#7ce8ff" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+  <line x1="186" y1="304" x2="280" y2="304" stroke="#7ce8ff" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+  <g transform="translate(300,290) rotate(45)" filter="url(#glowPink)">
+    <rect x="0" y="0" width="26" height="120" rx="6" fill="#ff2ec4"/>
+    <polygon points="0,120 26,120 13,150" fill="#ffd35c"/>
+  </g>
+</svg>
